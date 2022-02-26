@@ -20,7 +20,7 @@ stages:
     - task: Docker@1
       displayName: 'Build the Docker image'
       inputs:
-        containerregistrytype: 'Container Registry'
+        containerregistrytype: 'Docker Registry'
         dockerRegistryEndpoint: 'dockerHub'
         command: 'Build an image'
         dockerFile: '**/Dockerfile'
@@ -32,7 +32,7 @@ stages:
     - task: Docker@1
       displayName: 'Push the Docker image to Dockerhub'
       inputs:
-        containerregistrytype: 'Container Registry'
+        containerregistrytype: 'Docker Registry'
         dockerRegistryEndpoint: 'Docker Hub'
         command: 'Push an image'
         imageName: '$(ImageName)'
