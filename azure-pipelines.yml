@@ -4,7 +4,7 @@ trigger:
 - master
 
 resources:
-- repo: self
+- repo: 'https://github.com/mguazzardo/apiflask'
 
 variables:
   dockerHub: 'dockerHub' # specify your service connection name (create in previos step)
