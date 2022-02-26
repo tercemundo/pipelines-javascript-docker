@@ -7,6 +7,8 @@ resources:
 - repo: self
 
 variables:
+  dockerHub: 'dockerHub' # specify your service connection name (create in previos step)
+  imageName: 'mguazzardo/pruf' # your desired image name, format: mylogin/image-name
   tag: 'latest' # tag, target: mylogin/image-name:latest
 
 stages:
